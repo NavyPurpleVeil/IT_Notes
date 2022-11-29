@@ -89,3 +89,11 @@ Usually some form of:
 RPC-JSON RPC-XML api-http server custom protocols
 
 ------
+
+
+Userspace-defined IPC
+------
+One of the most common user-space defined IPC interfaces is D-BUS, which runs on UNIX sockets.
+D-BUS is a form of local Procedure Call IPC in which programs can register the functions other programs can use.
+
+------
