@@ -26,11 +26,11 @@ Without PID 1(process with no parents before itself) it simply isn't possible to
 How does a linux system start?
 ------------------------------
 First a bootloader pulls up an initiramfs.
+The linux kernel parses the cmdline(just like programs have a cmdline arguments so does a kernel and all binaries run under uefi).
 An init system is run from the initramfs, short setup of drivers is done, and the rootfs partition gets(system can run off of said ramdisk).
 The init runs a service manager and plenty more services to then start up the system as seen by the user.
 On desktop includes things like network managers, dhcp clients, any servers, dbus, udev, display manager(GUI login prompt), spawns some form of getty etc.
 
 Linux kernel can also take a role of an efi binary(EFISTUB) and those together with kexec(kernel exec) be used as a bootloader.
-
 
 
